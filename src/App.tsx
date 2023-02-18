@@ -33,7 +33,6 @@ export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
 
-//test sadsd
 function App() {
 
     const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
