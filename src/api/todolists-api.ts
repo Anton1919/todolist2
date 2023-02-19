@@ -72,7 +72,7 @@ export const todolistsApi = {
 		return instance.post<ResponseType<{ item: TodolistType }>>("todo-lists", {title})
 	},
 
-	geleteTodolist(id: string) {
+	deleteTodolist(id: string) {
 		return instance.delete<ResponseType>(`todo-lists/${id}`)
 	},
 

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import axios from "axios";
 import {todolistsApi} from "../api/todolists-api";
 
 export default {
@@ -49,7 +48,7 @@ export const DeleteTodolist = () => {
 
 	useEffect(() => {
 		const todolistId = "3631e2eb-e36d-4913-b61a-4d8228025a3d"
-		todolistsApi.geleteTodolist(todolistId)
+		todolistsApi.deleteTodolist(todolistId)
 			.then((res) => {
 				setState(res.data)
 			})
