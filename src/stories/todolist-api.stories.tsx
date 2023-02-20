@@ -21,8 +21,6 @@ export const GetTodolists = () => {
 			.then((res) => {
 				setState(res.data)
 			})
-		// здесь мы будем делать запрос и ответ закидывать в стейт.
-		// который в виде строки будем отображать в div-ке
 
 	}, [])
 	return <div>{JSON.stringify(state)}</div>
@@ -168,4 +166,3 @@ export const UpdateTasks = () => {
 		<button onClick={createTask}>create task</button>
 	</div>
 }
-
